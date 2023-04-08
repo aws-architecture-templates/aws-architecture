@@ -17,12 +17,11 @@ data = response.json()
 '''response = firehose.put_record(
     DeliveryStreamName='mercado-bitcoin-delivery-stream',
     Record={
-        'Data': weather.encode('utf-8')
+        'Data': data.encode('utf-8')
     }
 )
 '''
-'''data_dict = {key: [item.get(key) for item in data] for key in data[0].keys()}
-
+'''
 df2 = pd.DataFrame(data_dict)
 df2.to_excel('dados.xlsx', index=False)'''
 
