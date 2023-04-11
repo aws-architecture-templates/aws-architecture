@@ -1,6 +1,10 @@
 # Processing DynamoDB Streams with Lambda
 
+![image](https://user-images.githubusercontent.com/31045825/231228233-fa7f11b8-57e0-4e54-94eb-d3648558246a.png)
+
+
 This code creates resources for processing DynamoDB streams using Lambda, including the creation of a DynamoDB table with stream enabled, an AWS Lambda function to handle the stream events, an IAM role and policy for the Lambda function, and an S3 bucket to store artifacts. The code also sets up the necessary permissions for the Lambda function to access the DynamoDB stream and write to CloudWatch Logs, and filters the events to only include inserts and removals.
+
 
 # AWS Resources Created
 This Terraform configuration file creates the following resources in your AWS account:
